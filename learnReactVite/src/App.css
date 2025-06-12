@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --font: 'Inter', sans-serif;
+    --color: hsla(0, 0%, 0%, 100%);
+    --bgcolor: hsla(0, 0%, 0%, 80%);
+    --font-weight-regular: 500;
+    --font-size: 24px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+    color: var(--color);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size); 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+    background-color: var(--bgcolor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ToDoBoard-div-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.card {
-  padding: 2em;
+.ToDoBoard-div{
+    background-color: hsl(0, 0%, 96%);
+    width: 25%;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;   
 }
 
-.read-the-docs {
-  color: #888;
+.ToDoBoard-div h2{
+    font-size: 28px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.ToDoBoard-div button{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--bgcolor);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.Task-div{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.Task-div p{
+    text-transform: capitalize;
+}
+
+.Task-div .Task-checkbox-circle{
+    appearance: none; 
+    border: 2px solid var(--bgcolor);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+
+}
+
+.Task-div .Task-checkbox-circle:checked {
+  background-color: var(--bgcolor);
 }
