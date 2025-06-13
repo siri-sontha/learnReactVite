@@ -7,12 +7,12 @@ export default function ToDoBoard() {
             <div className="ToDoBoard-div-parent">
                 <div className="ToDoBoard-div">
                     <h2>To Do List</h2>
-                    <Task name="Pray" />
-                    <Task name="Code"/>
-                    <Task name="Take a break"/>
-                    <Task name="Code"/>
-                    <Task name="Eat"/>
-                    <Task name="Sleep"/>
+                    <Task task="Pray" />
+                    <Task task="Code"/>
+                    <Task task="Take a break"/>
+                    <Task task="Code"/>
+                    <Task task="Eat"/>
+                    <Task task="Sleep"/>
                     <Button />    
                 </div>
             </div>

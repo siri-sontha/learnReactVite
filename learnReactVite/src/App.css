@@ -32,7 +32,7 @@ body{
 .ToDoBoard-div{
     background-color: hsl(0, 0%, 96%);
     width: 25%;
-    height: 500px;
+    /* height: 500px; */
     padding: 40px;
     border-radius: 20px;   
 }
@@ -63,14 +63,14 @@ button{
 
 .Task-div p{
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .Task-div p:nth-of-type(2){
     right: 0;
     position: absolute;
-    cursor: pointer;
-}
 
+}
 
 .Task-div .Task-checkbox{
     border: 2px solid var(--bgcolor);
@@ -79,4 +79,11 @@ button{
     border-radius: 50%;
     cursor: pointer;
 
+}
+
+.Counter-btn{
+     width: 40%;
+     margin-bottom: 20px;
+     margin-left: 20px;
+     font-size: 18px;
 }
