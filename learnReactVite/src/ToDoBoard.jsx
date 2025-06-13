@@ -1,4 +1,5 @@
 import Task  from "./Task.jsx"
+import Button  from "./Button.jsx"
 
 export default function ToDoBoard() {
     return (
@@ -12,7 +13,7 @@ export default function ToDoBoard() {
                     <Task name="Code"/>
                     <Task name="Eat"/>
                     <Task name="Sleep"/>
-                    <button>Add Todo</button>
+                    <Button />    
                 </div>
             </div>
         </>
