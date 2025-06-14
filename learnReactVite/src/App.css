@@ -43,19 +43,9 @@ body{
     font-weight: 600;
 }
 
-button{
-    width: 100%;
-    padding: 10px 0px;
-    background-color: var(--bgcolor);
-    color: white;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-
 .Task-div{
     display: flex;
-    gap: 40px;
+    gap: 10px;
     align-items: center;
     padding-bottom: 20px;
     position: relative;
@@ -66,10 +56,16 @@ button{
     cursor: pointer;
 }
 
-.Task-div p:nth-of-type(2){
+.Task-div p:nth-of-type(3){
     right: 0;
     position: absolute;
 
+}
+
+.Task-div p:nth-of-type(1){
+    font-weight: 100;
+    padding-right: 4px;
+    font-size: 18px;
 }
 
 .Task-div .Task-checkbox{
@@ -79,6 +75,38 @@ button{
     border-radius: 50%;
     cursor: pointer;
 
+}
+
+.Insert-div{
+    position: relative;
+    
+}
+
+.Insert-div input{
+    position: relative;
+    padding: 13px 0;
+    width: 100%;
+    border-radius: 80px;
+    border: none;
+    background-color: rgb(101, 95, 95);
+    font-size: 15px;
+    color: white;
+    padding-left: 6px;
+}
+
+.Insert-div button{
+    padding: 8px 15px;
+    background-color: var(--bgcolor);
+    color: white;
+    border: none;
+    border-radius: 80px;
+    position: absolute;
+    right: 0px;
+    font-size: 20px;
+}
+
+.Insert-div button span{
+    color: white;
 }
 
 .Counter-btn{
